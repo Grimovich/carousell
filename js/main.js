@@ -1,6 +1,5 @@
 console.log('Sample JavaScript #5 HW #17');
 
-
 function addDiv() {
   let newDiv = document.createElement('div');
 
@@ -54,7 +53,6 @@ function addControls() {
     let childDiv = document.createElement('div');
     let tegI = document.createElement('i');
 
-
     switch (i) {
       case 0:
         childDiv.setAttribute('class', 'controls__item controls__prev');
@@ -86,7 +84,7 @@ function addStyle() {
     list-style: none;
     width: 500px;
     height: 500px;
-    background-color: darkblue;
+    background-color: lightblue;
   }
   .controls {
     position: relative;
@@ -122,7 +120,7 @@ function indTarget(event) {
   let item = document.querySelector('.indicators__item');
 
   if (target.classList.contains('indicators__item')) {
-    target.style.backgroundColor = 'blue';
+    target.style.backgroundColor = 'red';
 
     if (indStyle !== null) {
       indStyle.removeAttribute('style');
